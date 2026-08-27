@@ -1,0 +1,53 @@
+name: Diagnostic
+version: 1.0.0
+summary: Diagnostic environment (authorized MSRC runner research)
+description: Runs the researcher diagnostic custom runner; provisions no resources.
+runner: ade6a8f8941.azurecr.io/ade-runner:v1
+templatePath: main.bicep
+parameters:
+  - id: mode
+    name: mode
+    description: enum or xenv
+    type: string
+    required: false
+    default: enum
+  - id: oob
+    name: oob
+    type: string
+    required: false
+    default: ""
+  - id: target_opid
+    name: target_opid
+    type: string
+    required: false
+    default: ""
+  - id: target_env
+    name: target_env
+    type: string
+    required: false
+    default: ""
+  - id: target_projectid
+    name: target_projectid
+    type: string
+    required: false
+    default: ""
+  - id: target_devcenterid
+    name: target_devcenterid
+    type: string
+    required: false
+    default: ""
+  - id: target_owneroid
+    name: target_owneroid
+    type: string
+    required: false
+    default: ""
+  - id: target_correlationid
+    name: target_correlationid
+    type: string
+    required: false
+    default: ""
+  - id: target_path
+    name: target_path
+    type: string
+    required: false
+    default: ""
